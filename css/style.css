@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Shippori Antique', sans-serif;
+    scroll-behavior: smooth;
+  }
+  nav{
+    position: fixed;
+    top: 4%;
+    left: 0;
+    background: transparent;
+}
+.navbar{background: transparent;}
+.navbar .navbar-brand{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar-nav .nav-item{ 
+  margin: 0 10px;
+}
+.navbar-nav .nav-item .nav-link{
+  color: #fff;
+  transition: 0.2s;
+ font-size: 12px;
+ font-weight: bold;
+ text-transform: uppercase;
+}
+.navbar-nav .nav-item .nav-link:hover{
+  background: #d3eefa;
+  border-radius: 40px;
+}
+.navbar-toggler{
+  background: #fff
+}
+.navbar-toggler i{
+  color: #fff;
+}
+.toggle{display: none;}
+
+.nav-item .btn{
+    background:transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    margin: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.btn:hover{
+    color: #000;
+    background: #dfe6e9;
+}
+.container-fluid{
+    background: url('../Photo/pexels-jakub-novacek-924824.jpg')no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.row h2{
+    color: #fff;
+    margin-top: 20%;
+    margin-left: 10%;
+    font-size: 45px;
+    font-weight: 700;
+    word-spacing: 5px;
+}
+.row p{
+    margin-left: 10%;
+    color: #fff;
+    word-spacing: 5px;
+}
+.row p span{
+    font-weight: bold;
+}
+.card{
+    margin-top: 25%;
+    width: 90%;
+}
+.card .card-header{
+    background: #2f2f30;
+    color: #fff;
+    text-transform: capitalize;
+} 
+.card-header strong{
+    font-size: 30px;
+    padding: 0 10px;
+    word-spacing: 6px;
+}
+.card .card-header p{
+    color: #fff;
+    font-size: 14px;
+    word-spacing: 5px;
+}
+.card form .btn{
+    background:#ff6348;
+    color: cornsilk;
+    font-size: 14PX;
+    font-weight: bold;
+    border-bottom: 4px solid crimson;   
+}
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    section{
+       padding: 2rem ;
+   }
+}
+@media(max-width:768px){
+    .row h2{
+        margin-top: 20%;
+        text-align: center;
+        font-size: 25px;
+    } 
+    .row p{
+        text-align: center;
+    } 
+    .card{
+        align-items: center;
+    }
+}
+@media(max-width:400px){
+   html{
+       font-size: 50%;
+   }
+}
